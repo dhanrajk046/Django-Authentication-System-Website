@@ -1,0 +1,65 @@
+{% comment %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Login Page</title>
+
+<body>
+    Welcome {{request.user}}
+    <p>
+        This is the best website on this planets and you are very lucky to access it.
+    </p>
+    <a href="/logout">Logout</>
+
+</body>
+
+</html> {% endcomment %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        header,
+        footer {
+            background-color: #eee;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>{{request.user}}
+        <h1>Welcome to My Page</h1>
+    </header>
+
+    <main>
+        <p>This is a simple HTML template. You can add your content here.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website</p>
+    </footer>
+</body>
+
+</html>
